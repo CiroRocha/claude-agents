@@ -1,0 +1,14 @@
+{
+  "name": "dev-agents",
+  "description": "Architect design panel, linter, and code reviewer agents for Claude Code.",
+  "owner": {
+    "name": "ciro"
+  },
+  "plugins": [
+    {
+      "name": "dev-agents",
+      "source": "./plugins/dev-agents",
+      "description": "Architect design panel, linter, and code reviewer agents, with a gate that runs lint before every review."
+    }
+  ]
+}
