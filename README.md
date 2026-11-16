@@ -9,6 +9,15 @@ A Claude Code plugin (`dev-agents`) with my development agents.
 | `linter` | Agent | Lints changed files with the project's own linters, applies safe auto-fixes, and reports what's left. |
 | `code-reviewer` | Agent | Reviews changes for correctness, security, breaking changes, performance and tests. Read-only. |
 | Lint gate | Hook | Blocks `code-reviewer` until `linter` has run on the current state of the code. |
+| `/setup-statusline` | Skill | Installs a status line showing the model, folder, git branch, and session and weekly usage limits with reset times (24-hour clock, UTC-3). |
+
+The status line preview:
+
+```
+Opus 5.5 | my-project (main) | session 11% ↻ 20:10 | week 2% ↻ Sun 05:00
+```
+
+Run `/setup-statusline` once on each computer. It copies the script to `~/.claude/statusline.sh` and enables it in your settings. To use your own time zone, say so, for example `/setup-statusline use America/New_York`.
 
 ## Install
 
