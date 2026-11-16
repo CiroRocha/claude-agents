@@ -13,7 +13,7 @@ A Claude Code plugin (`dev-agents`) with my development agents.
 ## Install
 
 ```
-/plugin marketplace add <github-user>/claude-agents
+/plugin marketplace add CiroRocha/claude-agents
 /plugin install dev-agents@dev-agents
 ```
 
